@@ -32,5 +32,13 @@
   },
   "engines": {
     "node": ">=14.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xThanaphat/line-bot-restaurant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xThanaphat/line-bot-restaurant/issues"
+  },
+  "homepage": "https://github.com/xThanaphat/line-bot-restaurant#readme"
 }

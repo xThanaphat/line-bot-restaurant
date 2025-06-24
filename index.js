@@ -72,6 +72,8 @@ async function handleTextMessage(event) {
   const userId = event.source.userId;
   const text = event.message.text.toLowerCase();
 
+  console.log('User sent text:', text);
+
   if (text === 'สั่งอาหาร' || text === 'order') {
     // Show category selection
     return client.replyMessage(event.replyToken, getCategoryFlex());
@@ -478,7 +480,7 @@ function getCategoryFlex() {
                       text: 'อาหารจานเดียว'
                     },
                     style: 'secondary',
-                    height: '80px'
+                    height: 'lg'
                   },
                   {
                     type: 'text',
@@ -505,7 +507,7 @@ function getCategoryFlex() {
                       text: 'กับข้าว'
                     },
                     style: 'secondary',
-                    height: '80px'
+                    height: 'lg'
                   },
                   {
                     type: 'text',
@@ -539,7 +541,7 @@ function getCategoryFlex() {
                       text: 'สลัด/ยำ'
                     },
                     style: 'secondary',
-                    height: '80px'
+                    height: 'lg'
                   },
                   {
                     type: 'text',
@@ -566,7 +568,7 @@ function getCategoryFlex() {
                       text: 'ต้ม/แกง'
                     },
                     style: 'secondary',
-                    height: '80px'
+                    height: 'lg'
                   },
                   {
                     type: 'text',
@@ -601,7 +603,7 @@ function getCategoryFlex() {
                       text: 'เครื่องดื่ม'
                     },
                     style: 'secondary',
-                    height: '80px'
+                    height: 'lg'
                   },
                   {
                     type: 'text',
@@ -628,7 +630,7 @@ function getCategoryFlex() {
                       text: 'ของหวาน'
                     },
                     style: 'secondary',
-                    height: '80px'
+                    height: 'lg'
                   },
                   {
                     type: 'text',
@@ -648,7 +650,7 @@ function getCategoryFlex() {
             margin: 'lg'
           }
         ],
-        paddingAll: '10px'
+        paddingAll: 'sm'
       },
       footer: {
         type: 'box',
