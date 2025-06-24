@@ -1,0 +1,36 @@
+{
+  "name": "line-bot-restaurant",
+  "version": "1.0.0",
+  "description": "LINE Bot for Restaurant Ordering System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "deploy": "gcloud app deploy"
+  },
+  "keywords": [
+    "line-bot",
+    "restaurant",
+    "ordering-system",
+    "google-sheets"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@line/bot-sdk": "^7.7.0",
+    "axios": "^1.10.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "googleapis": "^118.0.0",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
