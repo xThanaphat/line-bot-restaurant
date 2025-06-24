@@ -72,6 +72,8 @@ async function handleTextMessage(event) {
   const userId = event.source.userId;
   const text = event.message.text.toLowerCase();
 
+  console.log('User sent text:', text);
+  
   if (text === 'สั่งอาหาร' || text === 'order') {
     // Show category selection
     return client.replyMessage(event.replyToken, getCategoryFlex());
